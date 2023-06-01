@@ -1,0 +1,12 @@
+{
+  "dependencies": {
+    "bootstrap": "^5.3.0-alpha3",
+    "jquery": "^3.7.0",
+    "num2persian": "^3.2.2",
+    "persianjs": "^0.4.0",
+    "wordifyfa": "^1.4.1"
+  },
+  "devDependencies": {
+    "tailwindcss": "^3.3.2"
+  }
+}

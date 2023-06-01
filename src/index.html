@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./../dist/css/app.css">
+    <link rel="stylesheet" href="./../dist/css/appCustom.css">
+    <link rel="stylesheet" href="./../dist/css/loading.css">
+    <script src="./jQuery/jquery.js"></script>
+    <title>HW-13</title>
+</head>
+<body class="bg-slate-900">
+    <div>
+        <header class="h-28 pt-3">
+            <div class="header container mx-auto rounded-lg flex">
+                <!-- login -->
+                <div id="loginView" class="login flex">
+                    <a class="decoration-slice  font-bold border-r rounded-r-lg p-2" href="./newEcount.html" id="login">
+                        <img class="icon-login" src="./icon/profile.png" alt="">
+                        <p>ثبتنام</p>
+                    </a>
+                    <a class="decoration-slice  font-bold border-l rounded-l-lg p-2" href="./login.html" id="register">
+                        <img class="icon-login" src="./icon/login_icon.png" alt="">
+                        <p>ورود</p>
+                    </a>
+                </div>
+
+                <div id="Exit" class="hidden flex items-center justify-center rounded-md text-center m-2 bg-slate-300">
+                    <button class="font-bold w-10 text-center"><img class="mx-auto" src="./icon/exit_out_x_icon.png" width="30px" alt="">خروج</button>
+                </div>
+
+                <div id="ProfileView" class="hidden text-center border rounded-md w-16 shadow-black">
+                    <img class="icon-login mx-auto" src="./profile-image/Circle-icons-profile.png"  alt="image">
+                    <p class="font-bold text-xl">فرزاد</p>
+                </div>
+
+
+                <div class="flex justify-center items-center w-96 ml-auto">
+                    <input  dir="rtl" type="search" name="" class="w-80 h-10 rounded-l-lg outline-none pr-3" id="searchInput" placeholder="اسم یه شهر رو بنویس..">
+                    <button id="searchweather" class="bg-white h-10 w-6 rounded-r-lg">
+                        <img src="./icon/search.png" width="20px" height="20px" alt="">
+                    </button>
+                </div>
+                <div id="historySearch" class="absolute bg-white historySearch hidden"></div>
+
+
+                <div class="ml-auto flex p-2">
+                    <img src="./icon/sunny.png"  width="50px" height="50px" alt="">
+                </div>
+
+            </div>
+        </header>
+        
+        <div id="cardView" class="flex justify-center mx-auto hidden">
+            <div class="card">
+                <div class="imageCardCity mx-auto mt-2 rounded-xl bg-black">
+                    <img id="imgCardView" class="rounded-xl" src="./profile-image/android-app-top-banner.png" alt="image">
+                </div>
+                <div class="mt-2"><hr class="border-slate-900 container"></div>
+                <div class="">
+                    <p id="nameCity" class="text-start pl-3 font-bold mt-2 text-blue-900">name:</p>
+                    <p id="description" class="text-start pl-3 font-bold mt-2 text-blue-900">description:</p>
+                    <p id="country" class="text-start pl-3 font-bold mt-2 text-blue-900">country:</p>
+                    <p id="FeelsLike" class="text-start pl-3 font-bold mt-2 text-blue-900">Feels Like:</p>
+                    <p id="temp" class="text-start pl-3 font-bold mt-2 text-blue-900">temp:</p>
+                    <p id="tempMin" class="text-start pl-3 font-bold mt-2 text-blue-900">temp min:</p>
+                    <p id="tempMax" class="text-start pl-3 font-bold mt-2 text-blue-900">temp max:</p>
+                </div>
+            </div>
+        </div>
+
+        <div id="animationHome" class="mt-32">
+            <div class="ball-container"></div>
+            <div class="ball-shadow"></div>
+
+            <div id="modaleHome" class="mt-20 bg-green-950 w-48 h-16 flex justify-center items-center mr-auto ml-auto rounded-xl font-bold">
+                <p class="text-white">لطفا ابتدا وارد شوید</p>
+            </div>
+        </div>
+
+        <div id="loading" class="main hidden">
+            <div class="f1"></div>
+            <div class="f2"></div>
+            <div class="f3"></div>
+        </div>
+
+    </div>
+    <script src="./js/app.js"></script>
+</body>
+</html>

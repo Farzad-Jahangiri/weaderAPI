@@ -1,0 +1,96 @@
+.icon-login{
+    width: 2rem;
+    height: 2rem;
+    border-radius: 20%;
+}
+a p{
+    color: #6E6C6C;
+}
+.header{
+    background-color: #B5B5B5;
+}
+.ball-container {
+    margin: auto;
+    animation: floating 5s ease-in-out infinite;
+    height: 100px;
+    width: 100px;
+    border-radius: 50%;
+    position: relative;
+
+    background: radial-gradient(circle at 75% 30%,
+        rgb(107, 6, 6) 5px,
+        rgb(36, 187, 187) 8%,
+        rgb(228, 26, 26) 60%,
+        rgb(173, 221, 221) 100%);
+    box-shadow: inset 0 0 20px #fff, inset 10px 0 46px #d3f8c8,
+      inset 88px 0px 60px #b4c3dd, inset -20px -60px 100px #5b43e7,
+      inset 0 50px 140px #6bdf7e, 0 0 90px #fff;
+}
+
+@keyframes floating {
+    0% {
+      transform: translatey(0px);
+    }
+
+    50% {
+      transform: translatey(-50px);
+    }
+
+    100% {
+      transform: translatey(0px);
+    }
+}
+
+.ball-shadow {
+    width: 95px;
+    height: 30px;
+    top: 50%;
+    animation: expanding 5s infinite;
+    position: relative;
+    border-radius: 50%;
+    margin: auto;
+    background: radial-gradient(circle at 75% 30%, rgb(221 215 243) 5px, rgb(36, 187, 187) 8%, rgb(228, 26, 26) 60%, rgb(173, 221, 221) 100%);
+    box-shadow: inset 0 0 20px #fff, inset 10px 0 46px #3f51b500, inset 88px 0px 60px #ffffff99, inset -20px -60px 100px #5b43e791, inset 0 50px 140px #ffffff, 0 0 90px #39316b;
+  }
+
+@keyframes expanding {
+    0%,
+    100% {
+      transform: scale(0.5);
+    }
+
+    50% {
+      transform: scale(0.75);
+    }
+}
+
+.h-40-rem{
+  height: 40rem;
+}
+/*bg-white w-96 h-96 text-center*/
+.card{
+  background-color: rgb(240, 229, 229);
+  width: 24rem;
+  height: 30rem;
+  text-align: center;
+  border-radius: 5%;
+  box-shadow: 10px 15px #c8c2c2;
+}
+
+.imageCardCity{
+  width: 95%;
+  height: 40%;
+}
+.imageCardCity img{
+  width: 100%;
+  height: 100%;
+}
+
+.historySearch{
+  width: 20rem;
+  border-radius: 10px;
+  height: auto;
+  color: #201f29;
+  top: 4rem;
+  left: 33rem;
+}

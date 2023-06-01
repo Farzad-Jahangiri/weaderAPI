@@ -1,0 +1,54 @@
+
+body{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    height: 40rem;
+    font-family: Arial, Helvetica, sans-serif;
+    background-image: linear-gradient(to right, rgb(0, 204, 255) , rgb(234, 0, 255));
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.card{
+    background-color: #fff;
+    width: 20rem;
+    height: 26rem;
+    /* margin: auto; */
+    border-radius: 1rem;
+    text-align: center;
+}
+h1{
+    text-align: center;
+    font-size: 2rem;
+}
+.input{
+    width: 15rem;
+    height: 1.5rem;
+    margin: 0.4rem;
+}
+form{
+    text-align: center;
+    padding: 1rem;
+}
+label{
+    float: left;
+    margin-left: 1.4rem;
+}
+a{
+    float: left;
+    margin-left: 1.4rem;
+}
+Button{
+    width: 15rem;
+    height: 2rem;
+    margin-top: 1rem;
+    background-image: linear-gradient(to right, rgb(234, 0, 255) , rgb(0, 204, 255));
+    border: 0;
+    cursor: pointer;
+}
+a{
+    float: none;
+    margin: 0;
+}
